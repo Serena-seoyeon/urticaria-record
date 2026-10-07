@@ -3,3 +3,23 @@
 .swipe-event::-webkit-scrollbar{display:none}
 .swipe-event .swipe-front{flex:0 0 100%;padding:16px 0;scroll-snap-align:start}
 .swipe-event .swipe-delete{flex:0 0 72px;margin:0;padding:0;background:#fceeed;color:#a03935;font-size:14px;font-weight:700;scroll-snap-align:end}
+
+/* Compact trend visuals */
+.action-trend-row{padding:10px 0;border-top:1px solid var(--line)}
+.action-trend-row:first-of-type{border-top:0;padding-top:0}
+.action-trend-label{display:flex;justify-content:space-between;align-items:baseline;gap:8px;font-size:13px}
+.action-trend-label .meta{font-size:11px;white-space:nowrap}
+.check-grid{display:grid;gap:3px;margin-top:6px}
+.check-day{height:7px;border-radius:2px;background:#edf1f8}
+.check-day.done,.check-legend i.done{background:var(--blue)}
+.check-legend{display:flex;justify-content:space-between;gap:8px;margin-top:4px;color:var(--muted);font-size:11px}
+.check-legend i{display:inline-block;width:7px;height:7px;border-radius:2px;background:#edf1f8;margin-right:4px}
+.check-legend i:not(:first-child){margin-left:6px}
+.time-band{display:flex;gap:2px;align-items:stretch;height:44px;padding:7px 0;touch-action:pan-y;cursor:crosshair}
+.time-band i{flex:1;min-width:0;border-radius:3px;background:rgba(23,62,120,var(--tone))}
+.time-axis{display:flex;justify-content:space-between;color:var(--muted);font-size:11px;font-variant-numeric:tabular-nums}
+.time-detail{font-size:12px;margin-top:9px;min-height:18px}
+.time-legend{display:flex;align-items:center;justify-content:flex-end;gap:4px;font-size:11px;color:var(--muted);margin-top:7px}
+.time-legend i{width:10px;height:5px;border-radius:1px;background:rgba(23,62,120,var(--tone))}
+.time-note{color:var(--muted);font-size:11px;margin-top:6px}
+.trend-card:has(.time-band) .card-title .meta{font-size:11px;white-space:nowrap}
